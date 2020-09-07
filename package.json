@@ -1,0 +1,48 @@
+{
+	"name": "@sofietv/code-standard-preset",
+	"version": "0.1.0",
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/nrkno/tv-automation-sofie-code-standard-preset.git"
+	},
+	"bugs": {
+		"url": "https://github.com/nrkno/tv-automation-sofie-code-standard-preset/issues"
+	},
+	"homepage": "https://github.com/nrkno/tv-automation-sofie-code-standard-preset#readme",
+	"contributors": [
+		{
+			"name": "Julian Waller",
+			"email": "julian@superfly.tv"
+		}
+	],
+	"engines": {
+		"node": ">=8.10"
+	},
+	"bin": {
+		"sofie-licensecheck": "./bin/checkLicenses.js"
+	},
+	"files": [
+		"/CHANGELOG.md",
+		"/README.md",
+		"/ts",
+		"/bin",
+		"/eslint",
+		"/.prettierrc.json"
+	],
+	"devDependencies": {
+		"standard-version": "^9.0.0"
+	},
+	"dependencies": {
+		"@typescript-eslint/eslint-plugin": "^4.1.0",
+		"@typescript-eslint/parser": "^4.1.0",
+		"eslint": "^7.8.1",
+		"eslint-config-prettier": "^6.11.0",
+		"eslint-plugin-node": "^11.1.0",
+		"eslint-plugin-prettier": "^3.1.4",
+		"legally": "^3.5.8"
+	},
+	"peerDependencies": {
+		"typescript": "~3.6.4"
+	}
+}
