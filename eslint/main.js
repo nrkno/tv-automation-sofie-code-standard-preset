@@ -30,6 +30,7 @@ module.exports = {
 				'@typescript-eslint/interface-name-prefix': 'off',
 				'@typescript-eslint/no-unused-vars': ['error', { argsIgnorePattern: '^_' }],
 				'node/no-unsupported-features/es-syntax': ['error', { ignores: ['modules'] }],
+				"no-use-before-define": "off"
 			},
 		},
 		{
@@ -39,6 +40,7 @@ module.exports = {
 			},
 			rules: {
 				'@typescript-eslint/ban-ts-ignore': 'off',
+				"no-use-before-define": "off"
 			},
 		},
 		{
