@@ -1,5 +1,5 @@
 {
-	"name": "@sofietv/code-standard-preset",
+	"name": "@sofie-automation/code-standard-preset",
 	"version": "0.1.0",
 	"license": "MIT",
 	"repository": {
@@ -14,6 +14,10 @@
 		{
 			"name": "Julian Waller",
 			"email": "julian@superfly.tv"
+		},
+		{
+			"name": "Balte de Wit",
+			"email": "balte@superfly.tv"
 		}
 	],
 	"engines": {
@@ -21,6 +25,14 @@
 	},
 	"bin": {
 		"sofie-licensecheck": "./bin/checkLicenses.js"
+	},
+	"scripts": {
+		"changelog": "standard-version",
+		"release": "yarn reset && yarn changelog",
+		"reset": "git clean -dfx && git reset --hard && yarn",
+		"validate:dependencies": "yarn audit --groups dependencies && yarn license-validate",
+		"validate:dev-dependencies": "yarn audit --groups devDependencies",
+		"license-validate": "./bin/checkLicenses.js -r --filter MIT --filter 0BSD --filter BSD --filter ISC --filter Apache --filter Unlicense --plain --border ascii"
 	},
 	"files": [
 		"/CHANGELOG.md",
