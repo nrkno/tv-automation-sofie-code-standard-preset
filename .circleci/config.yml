@@ -153,10 +153,6 @@ workflows:
               only:
                 - master
       - prerelease:
-          requires:
-            - test-latest(node-12)
-            - test-node-10
-            - test-node-8
           filters:
             tags:
               ignore: /.*/
