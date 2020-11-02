@@ -4,7 +4,7 @@ This library is used in the [**Sofie** TV News Studio Automation System](https:/
 
 ## Installation
 
-`yarn add @sofietv/code-standard-preset`
+`yarn add @sofie-automation/code-standard-preset`
 
 Add the following information to your `package.json`:
 
@@ -16,7 +16,7 @@ Add the following information to your `package.json`:
         "lint": "eslint . --ext .ts --ignore-pattern dist",
         "license-validate": "yarn sofie-licensecheck -r --filter MIT --filter 0BSD --filter BSD --filter ISC --filter Apache --filter Unlicense --plain --border ascii"
     },
-    "prettier": "@sofietv/code-standard-preset/.prettierrc.json",
+    "prettier": "@sofie-automation/code-standard-preset/.prettierrc.json",
     "husky": {
         "hooks": {
             "pre-commit": "lint-staged"
@@ -40,7 +40,7 @@ _.eslintrc.json_
 
 ```json
 {
-	"extends": "./node_modules/@sofietv/code-standard-preset/eslint/main"
+	"extends": "./node_modules/@sofie-automation/code-standard-preset/eslint/main"
 }
 ```
 
@@ -48,22 +48,22 @@ _tsconfig.json_
 
 ```
 {
-	"extends": "@sofietv/code-standard-preset/ts/tsconfig.lib",
+	"extends": "@sofie-automation/code-standard-preset/ts/tsconfig.lib",
 	"exclude": ["node_modules/**"]
 }
 ```
 
-_tsconfig.json_
+_tsconfig.build.json_
 
 ```json
 {
-	"extends": "@sofietv/code-standard-preset/ts/tsconfig.lib",
+	"extends": "@sofie-automation/code-standard-preset/ts/tsconfig.lib",
 	"exclude": ["node_modules/**", "src/**/*spec.ts", "src/**/__tests__/*", "src/**/__mocks__/*"],
 	"compilerOptions": {
 		"outDir": "./dist",
 		"baseUrl": "./",
 		"paths": {
-			"*": ["./node_modules/*", "./src/types/*"],
+			"*": ["./node_modules/*"],
 			"{{PACKAGE-NAME}}": ["./src/index.ts"],
 			"types": ["node", "jest"]
 		}
