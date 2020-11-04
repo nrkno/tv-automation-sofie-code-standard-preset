@@ -71,6 +71,8 @@ _tsconfig.build.json_
 }
 ```
 
+_Note: If you are using this in a 'binary' package, then you should use `tsconfig.bin` instead of `tsconfig.lib`. This adjusts the build and output slightly._
+
 _Note: replace the {{PACKAGE-NAME}} with the correct package name, i.e. `hyperdeck-connection`_
 
 Additionally you may want to include a _.gitattributes_ file:
