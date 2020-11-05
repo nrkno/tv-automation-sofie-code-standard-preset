@@ -4,7 +4,7 @@ This library is used in the [**Sofie** TV News Studio Automation System](https:/
 
 ## Installation
 
-`yarn add @sofie-automation/code-standard-preset`
+`yarn add --dev @sofie-automation/code-standard-preset`
 
 Add the following information to your `package.json`:
 
