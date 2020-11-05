@@ -18,6 +18,7 @@ A script for checking compatible licenses is included.
     "scripts": {
         ...,
         "lint": "eslint . --ext .ts --ignore-pattern dist",
+        "lint-fix": "yarn lint --fix",
         "license-validate": "yarn sofie-licensecheck -r --filter MIT --filter 0BSD --filter BSD --filter ISC --filter Apache --filter Unlicense --plain --border ascii"
     },
     "prettier": "@sofie-automation/code-standard-preset/.prettierrc.json",
@@ -31,7 +32,7 @@ A script for checking compatible licenses is included.
             "prettier --write"
         ],
         "*.{ts,tsx}": [
-            "npm run lint --fix"
+            "yarn lint-fix"
         ]
     },
     ...
@@ -63,7 +64,7 @@ _.eslintrc.json_
 }
 ```
 
-Add _.eslintignore_ is any folders or files should be ignored by the linter.
+Add _.eslintignore_ if any folders or files should be ignored by the linter.
 
 _tsconfig.json_
 
@@ -72,10 +73,10 @@ _tsconfig.json_
 	"extends": "@sofie-automation/code-standard-preset/ts/tsconfig.lib",
 	"exclude": ["node_modules/**"],
     "compilerOptions": {
-        "types: [
-            "jest",
-            "node"
-        ]
+		"types": [
+			"jest",
+			"node"
+		]
     }
 }
 ```
