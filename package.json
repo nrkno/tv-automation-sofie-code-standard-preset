@@ -24,10 +24,7 @@
 		"node": ">=10.12.1"
 	},
 	"bin": {
-		"sofie-licensecheck": "./bin/checkLicenses.js",
-		"lint-staged": "./bin/lint-staged",
-		"husky": "./bin/husky",
-		"prettier": "./bin/prettier"
+		"sofie-licensecheck": "./bin/checkLicenses.js"
 	},
 	"scripts": {
 		"changelog": "standard-version",
