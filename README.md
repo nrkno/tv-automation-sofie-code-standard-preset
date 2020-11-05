@@ -93,8 +93,8 @@ _tsconfig.build.json_
 		"paths": {
 			"*": ["./node_modules/*"],
 			"{{PACKAGE-NAME}}": ["./src/index.ts"]
-        },
-        "types": ["node", "jest"]
+		},
+		"types": ["node", "jest"]
 	}
 }
 ```
