@@ -70,7 +70,7 @@ _tsconfig.json_
 
 ```json
 {
-	"extends": "@sofie-automation/code-standard-preset/ts/tsconfig.lib",
+	"extends": "./tsconfig.build.json",
 	"exclude": ["node_modules/**"],
 	"compilerOptions": {
 		"types": ["jest", "node"]
