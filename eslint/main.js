@@ -46,7 +46,7 @@ module.exports = {
 			},
 			rules: {
 				'prettier/prettier': 'error',
-				'no-unused-vars': 'off',
+				'no-unused-vars': ['error', { argsIgnorePattern: '^_' }],
 				'no-extra-semi': 'off',
 				'node/no-unsupported-features/es-syntax': ['error', { ignores: ['modules'] }],
 				'no-use-before-define': 'off',
