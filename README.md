@@ -1,6 +1,6 @@
 # Sofie: The Modern TV News Studio Automation System (code standard preset)
 
-This library is used in the [**Sofie** TV News Studio Automation System](https://github.com/nrkno/Sofie-TV-automation/) for defining a code standard preset through [eslint](https://esling.org) and [prettier](https://prettier.io/). 
+This library is used in the [**Sofie** TV News Studio Automation System](https://github.com/nrkno/Sofie-TV-automation/) for defining a code standard preset through [eslint](https://esling.org) and [prettier](https://prettier.io/).
 
 A script for checking compatible licenses is included.
 
@@ -17,7 +17,7 @@ A script for checking compatible licenses is included.
     ...,
     "scripts": {
         ...,
-        "lint": "eslint . --ext .ts --ignore-pattern dist",
+        "lint": "eslint . --ext .ts --ext .js --ignore-pattern dist",
         "lint-fix": "yarn lint --fix",
         "license-validate": "yarn sofie-licensecheck -r --filter MIT --filter 0BSD --filter BSD --filter ISC --filter Apache --filter Unlicense --plain --border ascii"
     },
@@ -43,12 +43,12 @@ A script for checking compatible licenses is included.
 
 **Ensure** the following development dependencies are present:
 
-* `prettier`
-* `husky`
-* `lint-staged`
-* `@types\node` and `@types\jest` (if using)
-* Typescript 4 or above, e.g. `~4.0` with an up-to-date `ts-lib`
-* `jest` and `ts-jest`, if using
+- `prettier`
+- `husky`
+- `lint-staged`
+- `@types\node` and `@types\jest` (if using)
+- Typescript 4 or above, e.g. `~4.0` with an up-to-date `ts-lib`
+- `jest` and `ts-jest`, if using
 
 **Remove** any other linting configurations or linters. Also, `node-license-validator` is no longer required.
 
@@ -73,14 +73,11 @@ _tsconfig.json_
 
 ```json
 {
-	"extends": "@sofie-automation/code-standard-preset/ts/tsconfig.lib",
+	"extends": "./tsconfig.build.json",
 	"exclude": ["node_modules/**"],
-    "compilerOptions": {
-		"types": [
-			"jest",
-			"node"
-		]
-    }
+	"compilerOptions": {
+		"types": ["jest", "node"]
+	}
 }
 ```
 
@@ -97,7 +94,7 @@ _tsconfig.build.json_
 			"*": ["./node_modules/*"],
 			"{{PACKAGE-NAME}}": ["./src/index.ts"]
 		},
-		"types": ["node", "jest"]
+		"types": ["node"]
 	}
 }
 ```
