@@ -43,9 +43,6 @@ A script for checking compatible licenses is included.
 
 **Ensure** the following development dependencies are present:
 
-- `prettier`
-- `husky`
-- `lint-staged`
 - `@types\node` and `@types\jest` (if using)
 - Typescript 4 or above, e.g. `~4.0` with an up-to-date `ts-lib`
 - `jest` and `ts-jest`, if using
