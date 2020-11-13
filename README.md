@@ -19,7 +19,7 @@ A script for checking compatible licenses is included.
         ...,
         "lint": "eslint . --ext .ts --ext .js --ignore-pattern dist",
         "lint-fix": "yarn lint --fix",
-        "license-validate": "yarn sofie-licensecheck -r --filter MIT --filter 0BSD --filter BSD --filter ISC --filter Apache --filter Unlicense --plain --border ascii"
+        "license-validate": "yarn license-checker --allowOnly \"MIT;BSD;ISC;Apache-2.0;CC0;CC-BY-3.0\""
     },
     "prettier": "@sofie-automation/code-standard-preset/.prettierrc.json",
     "husky": {
