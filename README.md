@@ -50,7 +50,7 @@ A script for checking compatible licenses is included.
 - Typescript 4 or above, e.g. `~4.0` with an up-to-date `ts-lib`
 - `jest` and `ts-jest`, if using
 
-**Remove** any other linting configurations or linters. Also, `node-license-validator` is no longer required.
+**Remove** any other linting configurations or linters. Also, `node-license-validator` is no longer required. Remove libraries that are re-exported by this project `husky`, `lint-staged` and `prettier`
 
 ### Files
 
