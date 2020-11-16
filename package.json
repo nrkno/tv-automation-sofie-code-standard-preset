@@ -36,7 +36,7 @@
 		"reset": "git clean -dfx && git reset --hard && yarn",
 		"validate:dependencies": "yarn audit --groups dependencies && yarn license-validate",
 		"validate:dev-dependencies": "yarn audit --groups devDependencies",
-		"license-validate": "./bin/checkLicenses.js -r --filter MIT --filter 0BSD --filter BSD --filter ISC --filter Apache --filter Unlicense --plain --border ascii"
+		"license-validate": "./bin/checkLicenses.js"
 	},
 	"files": [
 		"/CHANGELOG.md",
@@ -57,9 +57,12 @@
 		"eslint-plugin-node": "^11.1.0",
 		"eslint-plugin-prettier": "^3.1.4",
 		"husky": "^4.3.0",
-		"legally": "^3.5.8",
+		"license-checker": "^25.0.1",
 		"lint-staged": "^10.5.1",
-		"prettier": "^2.1.2"
+		"meow": "^8.0.0",
+		"prettier": "^2.1.2",
+		"read-pkg-up": "^7.0.1",
+		"shelljs": "^0.8.4"
 	},
 	"peerDependencies": {
 		"typescript": "~4.0"
