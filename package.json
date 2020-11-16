@@ -27,13 +27,16 @@
 	"engines": {
 		"node": ">=10.12.1"
 	},
+	"bin": {
+		"sofie-licensecheck": "./bin/checkLicenses.js"
+	},
 	"scripts": {
 		"changelog": "standard-version",
 		"release": "yarn reset && yarn changelog",
 		"reset": "git clean -dfx && git reset --hard && yarn",
 		"validate:dependencies": "yarn audit --groups dependencies && yarn license-validate",
 		"validate:dev-dependencies": "yarn audit --groups devDependencies",
-		"license-validate": "license-checker --onlyAllow \"MIT;BSD;ISC;Apache-2.0;CC0;CC-BY-3.0\""
+		"license-validate": "./bin/checkLicenses.js"
 	},
 	"files": [
 		"/CHANGELOG.md",
@@ -56,7 +59,8 @@
 		"husky": "^4.3.0",
 		"license-checker": "^25.0.1",
 		"lint-staged": "^10.5.1",
-		"prettier": "^2.1.2"
+		"prettier": "^2.1.2",
+		"shelljs": "^0.8.4"
 	},
 	"peerDependencies": {
 		"typescript": "~4.0"
