@@ -1,5 +1,8 @@
 # Sofie: The Modern TV News Studio Automation System (code standard preset)
 
+[![CircleCI](https://circleci.com/gh/nrkno/tv-automation-sofie-code-standard-preset.svg?style=svg)](https://circleci.com/gh/nrkno/tv-automation-sofie-code-standard-preset)
+[![npm](https://img.shields.io/npm/v/@sofie-automation/code-standard-preset)](https://www.npmjs.com/package/@sofie-automation/code-standard-preset)
+
 This library is used in the [**Sofie** TV News Studio Automation System](https://github.com/nrkno/Sofie-TV-automation/) for defining a code standard preset through [eslint](https://esling.org) and [prettier](https://prettier.io/).
 
 A script for checking compatible licenses is included.
