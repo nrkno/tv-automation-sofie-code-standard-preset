@@ -46,7 +46,7 @@ jobs:
       - checkout
       - add_ssh_keys:
           fingerprints:
-            - '76:a4:ac:1c:ba:8c:57:f1:4c:66:1b:85:fe:44:64:52'
+            - 'be:bd:3b:f7:9b:15:fb:f4:7e:01:0a:54:6f:50:da:19'
       - run: mkdir -p ~/.ssh
       - run:
           name: Keyscan Github
@@ -103,7 +103,7 @@ jobs:
             fi
       - add_ssh_keys:
           fingerprints:
-            - 'ca:54:a9:03:b6:45:45:80:ca:b9:ee:1e:cb:22:1b:a3'
+            - 'be:bd:3b:f7:9b:15:fb:f4:7e:01:0a:54:6f:50:da:19'
       - run: mkdir -p ~/.ssh
       - run:
           name: Keyscan Github
