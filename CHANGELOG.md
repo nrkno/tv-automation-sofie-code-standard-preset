@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.2.1](https://github.com/nrkno/tv-automation-sofie-code-standard-preset/compare/v0.2.0...v0.2.1) (2020-12-14)
+
+
+### Features
+
+* add option to ignore certain packages which are false positives [publish] ([be171ca](https://github.com/nrkno/tv-automation-sofie-code-standard-preset/commit/be171caeca7bb93213f16ffba05bb4214ebfa741))
+
 ## 0.2.0 (2020-11-16)
 
 
