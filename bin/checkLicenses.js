@@ -10,12 +10,16 @@ const cli = meow(
       $ sofie-licensecheck
 
     Options
-      --debug  Show full packages list
+	  --debug  Show full packages list
+	  --allowPackages Semi-colon separated list of packages to ignore (eg cycle@1.0.3;underscore@1.12.0)
 `,
 	{
 		flags: {
 			debug: {
 				type: 'boolean',
+			},
+			allowPackages: {
+				type: 'string',
 			},
 		},
 	}
@@ -28,7 +32,12 @@ const projectNameAndVersion = `${pkgInfo.packageJson.name}@${pkgInfo.packageJson
 // TODO - Add option driven allowList selection with a list for GPL projects
 const allowListForMit = 'MIT;BSD;ISC;Apache-2.0;CC0;CC-BY-3.0;Unlicense'
 
-let cmd = ['license-checker', `--onlyAllow "${allowListForMit}"`, `--excludePackages ${projectNameAndVersion}`]
+let excludePackages = projectNameAndVersion
+if (cli.flags.allowPackages) {
+	excludePackages += `;${cli.flags.allowPackages}`
+}
+
+let cmd = ['license-checker', `--onlyAllow "${allowListForMit}"`, `--excludePackages "${excludePackages}"`]
 
 if (!cli.flags.debug) {
 	cmd.push('--summary')
