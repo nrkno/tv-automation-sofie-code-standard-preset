@@ -20,7 +20,7 @@ A script for checking compatible licenses is included.
     ...,
     "scripts": {
         ...,
-        "lint": "eslint . --ext .ts --ext .js --ignore-pattern dist",
+        "lint": "eslint . --ext .ts --ext .js --ext .tsx --ext .jsx --ignore-pattern dist",
         "lint-fix": "yarn lint --fix",
         "license-validate": "yarn sofie-licensecheck"
     },
@@ -31,10 +31,10 @@ A script for checking compatible licenses is included.
         }
     },
     "lint-staged": {
-        "*.{js,css,json,md,scss}": [
+        "*.{css,json,md,scss}": [
             "prettier --write"
         ],
-        "*.{ts,tsx}": [
+        "*.{ts,tsx,js,jsx}": [
             "yarn lint-fix"
         ]
     },
