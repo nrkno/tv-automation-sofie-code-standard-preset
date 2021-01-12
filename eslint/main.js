@@ -23,7 +23,7 @@ module.exports = {
 			parserOptions: { project: './tsconfig.json' },
 			settings: {
 				node: {
-					tryExtensions: ['.js', '.json', '.node', '.ts'],
+					tryExtensions: ['.js', '.json', '.node', '.ts', '.d.ts'],
 				},
 			},
 			rules: {
