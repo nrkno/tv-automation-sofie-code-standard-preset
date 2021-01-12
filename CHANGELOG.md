@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.2.2](https://github.com/nrkno/tv-automation-sofie-code-standard-preset/compare/v0.2.1...v0.2.2) (2021-01-12)
+
+
+### Bug Fixes
+
+* '.d.ts' is a valid extension to include from ts files ([f88345e](https://github.com/nrkno/tv-automation-sofie-code-standard-preset/commit/f88345efd55e417ab584257f88cef92ff8f86a61))
+
 ### [0.2.1](https://github.com/nrkno/tv-automation-sofie-code-standard-preset/compare/v0.2.0...v0.2.1) (2020-12-14)
 
 
