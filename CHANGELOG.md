@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.2.4](https://github.com/nrkno/tv-automation-sofie-code-standard-preset/compare/v0.2.3...v0.2.4) (2021-02-19)
+
+
+### Features
+
+* add rule @typescript-eslint/no-floating-promises ([#7](https://github.com/nrkno/tv-automation-sofie-code-standard-preset/issues/7)) ([eec181a](https://github.com/nrkno/tv-automation-sofie-code-standard-preset/commit/eec181a9fed7b5b5c38a4fc22b15ca6ec1c04ad4))
+
 ### [0.2.3](https://github.com/nrkno/tv-automation-sofie-code-standard-preset/compare/v0.2.2...v0.2.3) (2021-02-05)
 
 ### [0.2.2](https://github.com/nrkno/tv-automation-sofie-code-standard-preset/compare/v0.2.1...v0.2.2) (2021-01-12)
